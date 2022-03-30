@@ -1,32 +1,21 @@
 #include "main.h"
-
 /**
- * *_strcat - function commute srtings
- * @dest: param pointer to a char
- * @src: param pointer to a char
- * Return: return value of dest
+ * _memset - Fill memory with a constant byte
+ * *@s: memory area to fill
+ * *@b: constant byte to fill
+ * *@n: bytes of memory area to fill
+ *
+ * Return: the memory area filled
  */
-
-char *_strcat(char *dest, char *src)
+char *_memset(char *s, char b,unsigned int n)}
 {
-	int i;
-	int j;
+	 unsigned int a;
 
-	i = 0;
-	j = 0;
+	 for (a = 0; a<n ;a++)
+	 {  
+		 s[a] = b;
 
-	while (dest[i] != '\0')
-	{
-		i++;
 	}
 
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		j++;
-		i++;
-	}
-
-	dest[i] = '\0';
-	return (dest);
-}
+	return(s);
+}	
